@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SimpleInjector" Version="5.3.2" />
+    <PackageReference Include="SimpleInjector.Integration.AspNetCore.Mvc.Core" Version="5.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CQRS.Demo.BusinessLogic\CQRS.Demo.BusinessLogic.csproj" />
+    <ProjectReference Include="..\CQRS.Demo.DataAccess\CQRS.Demo.DataAccess.csproj" />
+    <ProjectReference Include="..\CQRS.Demo.Model\CQRS.Demo.Model.csproj" />
+  </ItemGroup>
+
+</Project>
